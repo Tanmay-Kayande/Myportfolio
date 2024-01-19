@@ -182,3 +182,5 @@
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:18:59:51 +0530] "POST /myproject/Message HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:18:59:51 +0530] "GET /myproject/read-message.jsp HTTP/1.1" 200 5455
 0:0:0:0:0:0:0:1 - - [19/Jan/2024:19:07:13 +0530] "GET /myproject/read-message.jsp HTTP/1.1" 200 5490
+0:0:0:0:0:0:0:1 - - [19/Jan/2024:19:22:58 +0530] "GET /myproject/admin.jsp HTTP/1.1" 200 8522
+0:0:0:0:0:0:0:1 - - [19/Jan/2024:19:26:22 +0530] "GET /myproject/admin.jsp HTTP/1.1" 200 8735
