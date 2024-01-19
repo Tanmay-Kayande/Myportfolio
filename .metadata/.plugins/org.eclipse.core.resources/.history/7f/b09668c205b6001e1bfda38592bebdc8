@@ -1,0 +1,12 @@
+<%
+	String message =(String) session.getAttribute("msg");
+	if(message!= null){
+		
+
+%>
+	<h1 style="text-align: center; colour: blue"><%=message %></h1>
+<%
+	}
+	else{
+%>
+	<h1 style="text-align: center; colour: red"><%=message %></h1>

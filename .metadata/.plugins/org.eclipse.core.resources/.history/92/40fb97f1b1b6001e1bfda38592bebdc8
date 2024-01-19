@@ -1,0 +1,26 @@
+package com.validation;
+
+public class Validation {
+
+	private String result;
+
+	public String validateLoginData(String username, String password) {
+		
+		int usernameLen = username.length();
+		int passwordLen = password.length();
+		
+		if(usernameLen<5 || usernameLen>30) {
+			
+			result = "invalid username";
+		}
+		else if (passwordLen<5 || passwordLen>30) {
+			
+			result = "invalid password";
+		}
+		else {
+			result = "valid";
+		}
+		
+		return result;
+	}
+}

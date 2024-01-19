@@ -1,0 +1,34 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+public class MessageDao implements InsertDao {
+	
+	
+	private Connection connection;
+	private String sql;
+	private PreparedStatement prepareStatement;
+	@Override
+	public void Insert(ArrayList<Object> al) {
+		
+		try {
+			
+			connection = ConnectionFactory.getConnection();
+			sql = "insert into message(name, email, message, date) values(?,?,?,?)";
+			prepareStatement = connection.prepareStatement(sql);
+			prepareStatement.setString(1, "name");
+			
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			
+		}
+	}
+
+	
+}

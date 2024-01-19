@@ -1,0 +1,6 @@
+package com.dao;
+
+public interface InsertDao {
+
+	public void Insert();
+}

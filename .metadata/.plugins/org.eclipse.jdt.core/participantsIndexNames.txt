@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\tanma\jsp_projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2231952979.index
+\myproject\src\main\resources
+C:\Users\tanma\jsp_projects\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\245752618.index
+\myproject\src\main\java

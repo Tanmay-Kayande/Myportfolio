@@ -1,0 +1,17 @@
+<%
+	String message =(String) session.getAttribute("msg");
+	if(message!= null){
+		
+		if(message.equals("message sent successfully")){
+%>
+	<h1 style="text-align: center; colour: blue"><%=message %></h1>
+<%
+	}
+	else{
+%>
+	<h1 style="text-align: center; colour: red"><%=message %></h1>
+<%
+	}
+	}
+	session.removeAttribute("msg");
+%>

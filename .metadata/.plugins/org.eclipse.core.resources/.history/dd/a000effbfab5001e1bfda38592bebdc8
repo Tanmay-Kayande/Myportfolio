@@ -1,0 +1,26 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.ArrayList;
+
+import com.mysql.cj.protocol.Resultset;
+
+
+public class AuthDao {
+
+	private Connection connection;
+	private PreparedStatement preparedStatement;
+	private int row;
+	private String result;
+	private String sql;
+	private Resultset rs;
+	
+	public ArrayList<Object> read(String username, String password) {
+		
+		
+		
+		return null;
+	}
+
+}
