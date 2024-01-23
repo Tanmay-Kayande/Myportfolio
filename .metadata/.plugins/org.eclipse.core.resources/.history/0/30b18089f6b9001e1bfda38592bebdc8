@@ -1,0 +1,46 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
+public class ProjectDao implements InsertDao {
+
+	private Connection connection;
+	private String sql;
+	private PreparedStatement prepareStatement;
+	private int row;
+	private String result;
+	private ResultSet rs;
+
+	@SuppressWarnings("finally")
+	@Override
+	public String Insert(ArrayList<Object> al) {
+
+		try {
+
+			String filename = (String) al.get(0);
+			String formatname = format(filename);
+			
+			connection = ConnectionFactory.getConnection();
+			
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+
+			return null;
+		}
+	}
+
+	private String format(String filename) {
+
+		String formatfilename = LocalDateTime.now().toString() + filename;
+		String[] split = formatfilename.split(":");
+		return split[0] + split[1] + split[3];
+
+	}
+
+}

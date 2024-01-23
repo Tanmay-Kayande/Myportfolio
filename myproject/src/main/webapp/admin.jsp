@@ -236,6 +236,26 @@ a {
 					</div>
 				</div>
 			</div>
+			
+			<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+				<div class="card border-0 bg-light rounded shadow">
+					<div class="card-body p-4">
+					
+					
+						<span class="badge rounded-pill bg-primary float-md-end mb-3 mb-sm-0"><%=count %> Projects	</span>
+						<h5>Insert Projects</h5>
+						<div class="mt-3">
+							<span class="text-muted d-block"><i class="fa fa-home"
+								aria-hidden="true"></i> <a href="#" target="_blank"
+								class="text-muted">TANMAY</a></span> <span class="text-muted d-block"><i
+								class="fa fa-map-marker" aria-hidden="true"></i> INDIA</span>
+						</div>
+						<div class="mt-3">
+							<a href="add-project.jsp" class="btn btn-primary">Add Project</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 			
@@ -250,7 +270,7 @@ a {
 			<!-- The form -->
 			<div class="form-popup" id="myForm">
 				<form action="Auth" method="post" class="form-container">
-					<h1>Login</h1>
+					<h2>Change Password</h2>
 
 					<label for="email"><b>Old Password</b></label> <input type="text"
 						placeholder="Enter old password" name="opass" required> <label

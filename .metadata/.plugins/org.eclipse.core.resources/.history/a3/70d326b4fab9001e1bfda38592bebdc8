@@ -1,0 +1,26 @@
+package com.fileIO;
+
+import java.io.InputStream;
+
+import javax.servlet.http.Part;
+
+public class ProjectIO {
+
+	private String path;
+	
+	public void write(String formatname, Part p) {
+		
+		path = "C:\\Users\\tanma\\jsp_projects\\myproject\\src\\main\\webapp\\images\\myprojects\\"+formatname;
+		try {
+			
+			InputStream is = p.getInputStream();
+			byte[] b =new byte[is.available()];
+			is.read(b);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

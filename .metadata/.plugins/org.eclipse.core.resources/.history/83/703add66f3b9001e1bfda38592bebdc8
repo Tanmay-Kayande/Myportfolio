@@ -1,0 +1,14 @@
+package com.dao;
+
+import java.util.ArrayList;
+
+public class ProjectDao implements InsertDao {
+
+	@Override
+	public String Insert(ArrayList<Object> al) {
+		
+		return null;
+	}
+
+	
+}

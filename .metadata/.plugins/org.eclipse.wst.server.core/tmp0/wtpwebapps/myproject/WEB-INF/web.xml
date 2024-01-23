@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>com.controller.Message</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Project</servlet-name>
+  	<display-name>Project</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Project</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Auth</servlet-name>
   	<url-pattern>/Auth</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>Message</servlet-name>
   	<url-pattern>/Message</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Project</servlet-name>
+  	<url-pattern>/Project</url-pattern>
   </servlet-mapping>
 </web-app>
