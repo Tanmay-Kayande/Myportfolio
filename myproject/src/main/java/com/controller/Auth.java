@@ -21,6 +21,7 @@ public class Auth extends HttpServlet {
 		
 		String check = request.getParameter("check");
 		HttpSession session = request.getSession();
+		AuthDao authDao = new AuthDao();
 		
 		if(check==null) {
 		String username = request.getParameter("username");
@@ -29,7 +30,7 @@ public class Auth extends HttpServlet {
 		result = new Validation().validateLoginData(username, password);
 		
 		if(result.equals("valid")) {
-			result = new AuthDao().read(username, password);
+			result = authDao.read(username, password);
 			if(result.equals("exist")) {
 				session.setAttribute("login", "exist");
 				response.sendRedirect("admin.jsp");
@@ -48,6 +49,36 @@ public class Auth extends HttpServlet {
 			session.removeAttribute("login");
 			session.setAttribute("msg", "Logout Successfully");
 			response.sendRedirect("login.jsp");
+		}
+		else if(check.equals("change")) {
+			
+			String opass = request.getParameter("opass");
+			String npass = request.getParameter("npass");
+			String cpass = request.getParameter("cpass");
+			
+			if(npass.equals(cpass)) {
+				
+				ArrayList<Object> al = new ArrayList<>();
+				al.add(opass);
+				al.add(npass);
+				result = authDao.update(al);
+				if(result.equals("updated")) {
+					session.setAttribute("msg", "New password updated");
+					response.sendRedirect("admin.jsp");
+				}
+				else if(result.equals("incorrect")) {
+					session.setAttribute("msg", "Invalid old password");
+					response.sendRedirect("admin.jsp");
+				}
+				else {
+					session.setAttribute("msg", "Something went wrong");
+					response.sendRedirect("admin.jsp");
+				}
+			}
+			else {
+				session.setAttribute("msg", "New password and Confirm password does not mstch");
+				response.sendRedirect("admin.jsp");
+			}
 		}
 
 }

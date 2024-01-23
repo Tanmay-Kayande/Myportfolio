@@ -199,6 +199,9 @@ a {
 <body>
 	
 	<div class="container mt-5 pt-4">
+	
+	<h3 style = "text-align: center;"><%@include file = "message.jsp" %></h3>
+	
 		<div class="row align-items-end mb-4 pb-2">
 			<div class="col-md-8">
 				<div class="section-title text-center text-md-start">
@@ -235,6 +238,11 @@ a {
 			</div>
 
 
+			
+
+
+			<div style="text-align: center; padding-top: 50px;" class="mt-3">
+			
 			<!-- A button to open the popup form -->
 			<button class="open-button" onclick="openForm()">CHANGE
 				CREDENTIALS</button>
@@ -257,9 +265,6 @@ a {
 					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 				</form>
 			</div>
-
-
-			<div style="text-align: center; padding-top: 50px;" class="mt-3">
 				<form action="Auth" method="post">
 					<input type ="hidden" name = "check" value = "Logout">
 					<button class="btn btn-primary">LOGOUT</button>

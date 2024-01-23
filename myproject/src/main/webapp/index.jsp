@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Marvel HTML Bootstrap 4 Template</title>
+    <title>Tanmay's Portfolio</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/unicons.css">
@@ -76,7 +76,7 @@
                                 <div class="animated-info">
                                     <span class="animated-item">Tanmay Kayande</span>
                                     <span class="animated-item">Java Developer</span>
-                                    <span class="animated-item">Specialist</span>
+                                    <span class="animated-item">Fresher</span>
                                 </div>
                         </h1>
 
