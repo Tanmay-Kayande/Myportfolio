@@ -1,9 +1,13 @@
 package com.validation;
 
+import java.util.ArrayList;
+
+import javax.servlet.http.Part;
+
 public class Validation {
 
 	private String result;
-	
+	private static final long max_size = 20 * 1024 * 1024;
 	
 	
 
@@ -49,5 +53,30 @@ public class Validation {
 			result = "valid";
 		}
 		return result;
+	}
+
+
+
+
+	public String validateproject(ArrayList<Object> al) {
+		
+		String name = (String) al.get(0);
+		Part part = (Part)al.get(1);
+		long size = part.getSize();
+		
+		if(!name.endsWith(".jpg")) {
+			
+			result = "invalid";
+		}		
+		else if(size> max_size) {
+			
+			result = "invalid";
+		}else {
+			
+			result = "valid";
+		}
+		
+		return result;
+		
 	}
 }

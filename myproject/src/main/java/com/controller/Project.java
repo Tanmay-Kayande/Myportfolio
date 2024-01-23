@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
 import com.dao.ProjectDao;
+import com.validation.Validation;
 
 
 @SuppressWarnings("serial")
@@ -29,17 +30,28 @@ public class Project extends HttpServlet {
 		al.add(filename);
 		al.add(part);
 		
-		result = new ProjectDao().Insert(al);
-		if(result.equals("inserted")) {
+		result = new Validation().validateproject(al);
+		if(result.equals("valid")) {
 			
-			session.setAttribute("msg", "Project uploaded Successfully");
-			response.sendRedirect("add-project.jsp");
+			result = new ProjectDao().Insert(al);
+			if(result.equals("inserted")) {
+				
+				session.setAttribute("msg", "Project uploaded Successfully");
+				response.sendRedirect("add-project.jsp");
+				
+			}else {
+				
+				session.setAttribute("msg", "Something went wrong");
+				response.sendRedirect("add-project.jsp");
+			}
+		}
+		else {
 			
-		}else {
-			
-			session.setAttribute("msg", "Something went wrong");
+			session.setAttribute("msg", "Size should be less than 100MB and in JPG format only");
 			response.sendRedirect("add-project.jsp");
 		}
+		
+		
 	}
 
 }

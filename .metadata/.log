@@ -5352,3 +5352,174 @@ Caused by: java.io.IOException: The pipe is being closed
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:27:08.504
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 20:40:05.135
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:40:05.144
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:40:05.151
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 20:51:40.820
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:51:40.822
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:51:40.824
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 20:53:42.870
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:53:42.873
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 20:53:42.876
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:02:07.850
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:02:07.851
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:02:07.853
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:06:29.746
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:06:29.748
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:06:29.749
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:12:34.752
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:12:34.754
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:12:34.756
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:14:00.302
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:14:00.304
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:14:00.305
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:17:58.629
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:17:58.631
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:17:58.633
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:20:18.625
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:20:18.627
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:20:18.629
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 21:20:24.087
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:20:24.088
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 21:20:24.089
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:19:52.073
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:19:52.084
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:19:52.086
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:20:55.154
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:20:55.156
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:20:55.157
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:25:22.216
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:25:22.218
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:25:22.220
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:25:53.029
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:25:53.031
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:25:53.033
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:27:53.618
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:27:53.620
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:27:53.621
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 22:31:48.113
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:31:48.115
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 22:31:48.116
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 23:19:24.381
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:19:24.396
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:19:24.399
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 23:19:45.292
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:19:45.295
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:19:45.297
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-01-23 23:21:57.999
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:21:58.001
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-23 23:21:58.003
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

@@ -4502,3 +4502,99 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2024-01-23 20:27:08,504 [Worker-335: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
 2024-01-23 20:27:08,504 [Worker-335: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2024-01-23 20:27:08,504 [Worker-335: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 20:27:08,504 [Worker-335: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:27:08,504 [Worker-335: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 20:40:05,133 [Worker-337: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 20:40:05,143 [Worker-337: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:40:05,145 [Worker-337: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 20:40:05,150 [Worker-337: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:40:05,152 [Worker-337: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 20:51:40,819 [Worker-347: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 20:51:40,821 [Worker-347: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:51:40,822 [Worker-347: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 20:51:40,824 [Worker-347: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:51:40,824 [Worker-347: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 20:53:42,869 [Worker-349: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 20:53:42,872 [Worker-349: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:53:42,874 [Worker-349: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 20:53:42,875 [Worker-349: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 20:53:42,876 [Worker-349: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:02:07,849 [Worker-344: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:02:07,851 [Worker-344: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:02:07,852 [Worker-344: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:02:07,853 [Worker-344: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:02:07,853 [Worker-344: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:06:29,746 [Worker-350: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:06:29,748 [Worker-350: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:06:29,748 [Worker-350: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:06:29,749 [Worker-350: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:06:29,750 [Worker-350: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:12:34,751 [Worker-357: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:12:34,753 [Worker-357: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:12:34,754 [Worker-357: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:12:34,755 [Worker-357: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:12:34,756 [Worker-357: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:14:00,301 [Worker-355: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:14:00,303 [Worker-355: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:14:00,304 [Worker-355: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:14:00,305 [Worker-355: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:14:00,306 [Worker-355: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:17:58,628 [Worker-358: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:17:58,630 [Worker-358: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:17:58,632 [Worker-358: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:17:58,632 [Worker-358: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:17:58,633 [Worker-358: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:20:18,625 [Worker-358: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:20:18,627 [Worker-358: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:20:18,627 [Worker-358: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:20:18,628 [Worker-358: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:20:18,629 [Worker-358: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 21:20:24,086 [Worker-359: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 21:20:24,088 [Worker-359: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:20:24,088 [Worker-359: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 21:20:24,089 [Worker-359: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 21:20:24,090 [Worker-359: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:19:52,072 [Worker-363: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:19:52,083 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:19:52,084 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:19:52,085 [Worker-363: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:19:52,086 [Worker-363: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:20:55,154 [Worker-360: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:20:55,155 [Worker-360: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:20:55,156 [Worker-360: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:20:55,157 [Worker-360: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:20:55,157 [Worker-360: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:25:22,216 [Worker-365: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:25:22,218 [Worker-365: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:25:22,219 [Worker-365: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:25:22,220 [Worker-365: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:25:22,220 [Worker-365: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:25:53,029 [Worker-365: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:25:53,031 [Worker-365: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:25:53,032 [Worker-365: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:25:53,032 [Worker-365: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:25:53,033 [Worker-365: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:27:53,617 [Worker-364: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:27:53,619 [Worker-364: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:27:53,620 [Worker-364: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:27:53,621 [Worker-364: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:27:53,621 [Worker-364: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 22:31:48,112 [Worker-368: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 22:31:48,113 [Worker-368: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:31:48,115 [Worker-368: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 22:31:48,116 [Worker-368: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 22:31:48,117 [Worker-368: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 23:19:24,376 [Worker-371: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 23:19:24,395 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 23:19:24,397 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 23:19:24,398 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 23:19:24,399 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 23:19:45,292 [Worker-371: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 23:19:45,294 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 23:19:45,296 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 23:19:45,297 [Worker-371: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 23:19:45,297 [Worker-371: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\tanma\jsp_projects\myproject\src\test\resources
+2024-01-23 23:21:57,998 [Worker-372: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2024-01-23 23:21:58,001 [Worker-372: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2024-01-23 23:21:58,001 [Worker-372: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2024-01-23 23:21:58,002 [Worker-372: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
