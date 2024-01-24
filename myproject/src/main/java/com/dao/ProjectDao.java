@@ -9,8 +9,9 @@ import java.util.ArrayList;
 import javax.servlet.http.Part;
 
 import com.fileIO.ProjectIO;
+import com.pojo.Projectpojo;
 
-public class ProjectDao implements InsertDao {
+public class ProjectDao implements InsertDao, ReadDao {
 
 	private Connection connection;
 	private String sql;
@@ -64,4 +65,53 @@ public class ProjectDao implements InsertDao {
 
 	}
 
+	@SuppressWarnings("finally")
+	@Override
+	public ArrayList<Object> read() {
+		
+		ArrayList<Object> al = new ArrayList<>();
+		try {
+			
+			connection = ConnectionFactory.getConnection();
+			sql = "select * from project";
+			prepareStatement = connection.prepareStatement(sql);
+			rs = prepareStatement.executeQuery();
+			while(rs.next()) {
+				
+				Projectpojo p = new Projectpojo(rs.getInt("sn"),rs.getString("filename"));
+				al.add(p);
+			}
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			
+			return al;
+		}
+		
+	}
+	
+	@SuppressWarnings("finally")
+	public int count() {
+		
+		int no_of_message = 0;
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select count(*) as count from project";
+			prepareStatement = connection.prepareStatement(sql);
+			rs = prepareStatement.executeQuery();
+			rs.next();
+			no_of_message = rs.getInt("count");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			
+			return no_of_message;
+		}
+
+}
 }

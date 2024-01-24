@@ -37,18 +37,18 @@ public class Project extends HttpServlet {
 			if(result.equals("inserted")) {
 				
 				session.setAttribute("msg", "Project uploaded Successfully");
-				response.sendRedirect("add-project.jsp");
+				response.sendRedirect("project.jsp");
 				
 			}else {
 				
 				session.setAttribute("msg", "Something went wrong");
-				response.sendRedirect("add-project.jsp");
+				response.sendRedirect("project.jsp");
 			}
 		}
 		else {
 			
 			session.setAttribute("msg", "Size should be less than 100MB and in JPG format only");
-			response.sendRedirect("add-project.jsp");
+			response.sendRedirect("project.jsp");
 		}
 		
 		
