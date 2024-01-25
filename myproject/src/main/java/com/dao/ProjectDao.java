@@ -11,7 +11,7 @@ import javax.servlet.http.Part;
 import com.fileIO.ProjectIO;
 import com.pojo.Projectpojo;
 
-public class ProjectDao implements InsertDao, ReadDao {
+public class ProjectDao implements InsertDao, ReadDao, DeleteDao  {
 
 	private Connection connection;
 	private String sql;
@@ -96,22 +96,48 @@ public class ProjectDao implements InsertDao, ReadDao {
 	@SuppressWarnings("finally")
 	public int count() {
 		
-		int no_of_message = 0;
+		int no_of_projects = 0;
 		try {
 			connection = ConnectionFactory.getConnection();
 			sql = "select count(*) as count from project";
 			prepareStatement = connection.prepareStatement(sql);
 			rs = prepareStatement.executeQuery();
 			rs.next();
-			no_of_message = rs.getInt("count");
+			no_of_projects = rs.getInt("count");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		finally {
 			
-			return no_of_message;
+			return no_of_projects;
 		}
 
 }
+
+	@SuppressWarnings("finally")
+	@Override
+	public String delete(int sn) {
+		
+		try {
+			
+			connection = ConnectionFactory.getConnection();
+			sql = "delete from project where sn = ?";
+			prepareStatement = connection.prepareStatement(sql);
+			prepareStatement.setInt(1, sn);
+			row = prepareStatement.executeUpdate();
+			if(row==1) {
+				result = "deleted";
+			}
+			
+		} catch (Exception e) {
+			result = "failed";
+			e.printStackTrace();
+		}
+		finally {
+			
+			return result;
+		}
+	}
 }
+

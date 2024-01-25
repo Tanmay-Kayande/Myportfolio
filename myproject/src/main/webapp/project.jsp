@@ -95,6 +95,9 @@ if (value == null) {
         <h1>Add Project</h1>
         <a href="admin.jsp" style="color: #fff; text-decoration: none;">Admin</a>
     </header>
+    <div id="message-container">
+        <%@include file="message.jsp" %>
+    </div>
 
     <!-- Add Project Section -->
     <div class="add-project">
@@ -116,7 +119,10 @@ if (value == null) {
                 <div class="project-item">
                     <img src="images/myprojects/<%=p.getFilename()%>" class="img-fluid" alt="project image">
                     <form action="Project" method="post">
-                        <button>Update</button> <button>Delete</button>
+                    <input type = "hidden" name = "check" value ="delete">
+                    <input type = "hidden" name = "sn" value ="<%=p.getSn()%>">
+                    <input type = "hidden" name = "filename" value ="<%=p.getFilename()%>">
+                        <button>Delete</button>
                     </form>
                 </div>
             <%
@@ -125,8 +131,5 @@ if (value == null) {
         </div>
     </div>
 
-    <div id="message-container">
-        <%@include file="message.jsp" %>
-    </div>
 </body>
 </html>
