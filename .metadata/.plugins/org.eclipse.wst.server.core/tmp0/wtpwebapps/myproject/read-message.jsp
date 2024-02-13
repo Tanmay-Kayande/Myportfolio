@@ -1,11 +1,10 @@
-
 <%@page import="com.pojo.MessagePojo"%>
 <%@page import="com.dao.MessageDao"%>
 <%
 String value = (String) session.getAttribute("login");
 if (value == null) {
-	response.sendRedirect("login.jsp");
-	return;
+    response.sendRedirect("login.jsp");
+    return;
 }
 %>
 
@@ -20,9 +19,7 @@ if (value == null) {
 
 <title>contacts card - Bootdey.com</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
-	rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
 body {
 	margin-top: 20px;
@@ -35,9 +32,10 @@ body {
 	box-shadow: none;
 }
 
-.profile .panel-heading {
-	color: #585f69;
-	background: #fff;
+/* Modified panel-heading class */
+.panel-heading {
+	color: #fff;
+	background: #6dc77a; /* Green background color */
 	padding: 7px 15px;
 	border-bottom: solid 3px #f7f7f7;
 }
@@ -115,9 +113,7 @@ body {
 	margin-right: 5px;
 }
 </style>
-<link
-	href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
-	rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container profile">
@@ -125,13 +121,14 @@ body {
 			<div class="panel panel-profile">
 				<div class="panel-heading overflow-h">
 					<%@include file= "message.jsp" %>
-					<h2 class="panel-title heading-sm pull-left">
-						<i></i><a href="admin.jsp">Admin</a>
-					</h2><br>
-					<h2 class="panel-title heading-sm pull-left">
-						<i></i>Contacts
-					</h2>
-
+					<div class="text-center"> <!-- Center-aligning "Contacts" -->
+						<h2 class="panel-title heading-sm">
+							<i></i>Contacts
+						</h2>
+						<h2 class="panel-title heading-sm">
+							<i></i><a href="admin.jsp">Admin</a> <!-- Moved "Admin" link below "Contacts" -->
+						</h2>
+					</div>
 				</div>
 				<div class="panel-body">
 					<div class="row">
@@ -181,7 +178,7 @@ body {
 								<form action="Message" method="post" onsubmit="return ensure()">
 									<input type="hidden" name="check" value="delete">
 									<input type="hidden" name="sn" value="<%=m.getSn() %>">
-									<button>delete</button>
+									<button class="btn btn-danger btn-xs" type="submit">Delete</button>
 								</form>
 							</div>
 							<i class="fa-sharp fa-regular fa-calendar-days"></i>
@@ -198,10 +195,4 @@ body {
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script
-		src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		
-	</script>
-</body>
-</html>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

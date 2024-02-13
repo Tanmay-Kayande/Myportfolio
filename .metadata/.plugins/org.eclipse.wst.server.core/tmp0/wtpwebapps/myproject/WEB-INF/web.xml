@@ -22,6 +22,12 @@
   	<description></description>
   	<servlet-class>com.controller.Project</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Education</servlet-name>
+  	<display-name>Education</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Education</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Auth</servlet-name>
   	<url-pattern>/Auth</url-pattern>
@@ -33,5 +39,9 @@
   <servlet-mapping>
   	<servlet-name>Project</servlet-name>
   	<url-pattern>/Project</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Education</servlet-name>
+  	<url-pattern>/Education</url-pattern>
   </servlet-mapping>
 </web-app>

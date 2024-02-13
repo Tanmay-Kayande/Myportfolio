@@ -4,8 +4,8 @@
 <%
 String value = (String) session.getAttribute("login");
 if (value == null) {
-	response.sendRedirect("login.jsp");
-	return;
+    response.sendRedirect("login.jsp");
+    return;
 }
 %>
 
@@ -30,20 +30,10 @@ if (value == null) {
             background-color: #6dc77a;
             color: #fff;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .container {
-            max-width: 800px;
+        .add-project {
+            max-width: 200px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -53,7 +43,13 @@ if (value == null) {
         }
 
         .read-projects {
-            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
         }
 
         .project-list {
@@ -65,20 +61,19 @@ if (value == null) {
         .project-item {
             width: 48%;
             margin-bottom: 20px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            overflow: hidden;
         }
 
         .project-item img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px 5px 0 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
 
         .project-item form {
-            padding: 10px;
-            background-color: #f4f4f4;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
         }
 
         button {
@@ -98,7 +93,7 @@ if (value == null) {
 <body>
     <header>
         <h1>Update Project</h1>
-        <a href="admin.jsp">Admin</a>
+        <a href="admin.jsp" style="color: #fff; text-decoration: none;">Admin</a>
     </header>
     <div id="message-container">
         <%@include file="message.jsp" %>

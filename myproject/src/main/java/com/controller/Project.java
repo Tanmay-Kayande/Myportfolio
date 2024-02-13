@@ -70,8 +70,6 @@ public class Project extends HttpServlet {
 			all.add(part);
 			all.add(sn);
 			all.add(newname);
-			String name = (String)all.get(0);
-			System.out.println(name);
 			String validate = val.validateUpdateProject(all);
 			if(validate.equals("valid")) {
 			String result = pd.update(all);

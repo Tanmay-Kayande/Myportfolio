@@ -180,9 +180,10 @@
 			<div class="row">
 
 				<div class="col-lg-6 col-12">
-					<h2 class="mb-4">Experiences</h2>
+					<h2 class="mb-4">Certificates</h2>
 
 					<div class="timeline">
+					<!-- loop from here -->
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
 								<span>2019</span>
@@ -196,8 +197,9 @@
 									faucibus nunc.</p>
 							</div>
 						</div>
+						
 
-						<div class="timeline-wrapper">
+						<!-- <div class="timeline-wrapper">
 							<div class="timeline-yr">
 								<span>2018</span>
 							</div>
@@ -236,7 +238,7 @@
 								<p>Cras scelerisque scelerisque condimentum. Nullam at
 									volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
@@ -245,6 +247,8 @@
 					<h2 class="mb-4 mobile-mt-2">Educations</h2>
 
 					<div class="timeline">
+					<!-- loop from here -->
+					
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
 								<span>2017</span>
@@ -257,8 +261,9 @@
 									would be very helpful. We need your support.</p>
 							</div>
 						</div>
+						
 
-						<div class="timeline-wrapper">
+						<!-- <div class="timeline-wrapper">
 							<div class="timeline-yr">
 								<span>2015</span>
 							</div>
@@ -286,7 +291,7 @@
 									or personal sites. You cannot redistribute this template
 									without a permission.</p>
 							</div>
-						</div>
+						</div> -->
 
 					</div>
 				</div>

@@ -12,3 +12,6 @@
 1707809570820	Delete element
 1707810105612	Delete element
 1707810586121	Delete element
+1707822797518	Extract local variable 'eduDao'
+1707823060635	Extract local variable 'al'
+1707824753198	Extract local variable 'insert'

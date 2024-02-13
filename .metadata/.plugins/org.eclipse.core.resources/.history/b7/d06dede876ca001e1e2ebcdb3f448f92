@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts Card - Bootdey.com</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin-top: 20px;
+            background: #eee;
+        }
+
+        .profile .panel-profile {
+            border: none;
+            margin-bottom: 0;
+            box-shadow: none;
+        }
+
+        .panel-heading {
+            color: #fff;
+            background: #6dc77a;
+            padding: 7px 15px;
+            border-bottom: solid 3px #f7f7f7;
+        }
+
+        .panel-heading .panel-title {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .panel-body {
+            padding: 20px;
+        }
+
+        .profile-blog {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            border: 1px solid #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .name-location {
+            overflow: hidden;
+        }
+
+        .name-location strong {
+            color: #555;
+            display: block;
+            font-size: 16px;
+        }
+
+        .name-location span a {
+            color: #555;
+        }
+
+        .margin-bottom-20 {
+            margin-bottom: 20px;
+        }
+
+        .profile-blog p {
+            margin-bottom: 10px;
+        }
+
+        .profile-blog hr {
+            margin: 10px 0;
+        }
+
+        .btn-delete {
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container profile">
+        <div class="col-md-12">
+            <div class="panel panel-profile">
+                <div class="panel-heading">
+                    <div class="text-center">
+                        <h2 class="panel-title">Contacts</h2>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="profile-blog">
+                                <div class="name-location">
+                                    <strong>Name</strong> <span><i></i><a href="#">Date,</a> <a href="#">Email</a></span>
+                                </div>
+                                <div class="clearfix margin-bottom-20"></div>
+                                <p>Message</p>
+                                <hr>
+                                <form action="Message" method="post" onsubmit="return ensure()">
+                                    <input type="hidden" name="check" value="delete">
+                                    <input type="hidden" name="sn" value="<%=m.getSn() %>">
+                                    <button class="btn btn-delete btn-xs" type="submit">Delete</button>
+                                </form>
+                            </div>
+                            <i class="fa-sharp fa-regular fa-calendar-days"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function ensure() {
+            return confirm("Are you sure?");
+        }
+    </script>
+</body>
+</html>

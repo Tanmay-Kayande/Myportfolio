@@ -48,7 +48,7 @@ public class Message extends HttpServlet {
 				response.sendRedirect("index.jsp");
 				session.setAttribute("msg", "Something went worng");
 			}
-			System.out.println(result);
+			
 		}
 		else {
 			response.sendRedirect("index.jsp");

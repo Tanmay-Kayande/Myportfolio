@@ -4,8 +4,8 @@
 <%
 String value = (String) session.getAttribute("login");
 if (value == null) {
-	response.sendRedirect("login.jsp");
-	return;
+    response.sendRedirect("login.jsp");
+    return;
 }
 %>
 
@@ -59,7 +59,7 @@ if (value == null) {
         }
 
         .project-item {
-            width: 48%; /* Adjust the width as needed */
+            width: 48%;
             margin-bottom: 20px;
         }
 
@@ -89,6 +89,11 @@ if (value == null) {
             margin-top: 20px;
         }
     </style>
+    <script type="text/javascript">
+        function ensure() {
+            return confirm("ARE YOU SURE!!!");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -118,11 +123,11 @@ if (value == null) {
             %>
                 <div class="project-item">
                     <img src="images/myprojects/<%=p.getFilename()%>" class="img-fluid" alt="project image">
-                    <form action="Project" method="post">
-                    <input type = "hidden" name = "check" value ="delete">
-                    <input type = "hidden" name = "sn" value ="<%=p.getSn()%>">
-                    <input type = "hidden" name = "filename" value ="<%=p.getFilename()%>">
-                        <button>Delete</button>
+                    <form action="Project" method="post" onsubmit="return ensure();">
+                        <input type="hidden" name="check" value="delete">
+                        <input type="hidden" name="sn" value="<%=p.getSn()%>">
+                        <input type="hidden" name="filename" value="<%=p.getFilename()%>">
+                        <button type="submit">Delete</button>
                     </form>
                 </div>
             <%

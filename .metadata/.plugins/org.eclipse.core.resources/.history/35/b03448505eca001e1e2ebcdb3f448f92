@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Education" method="post" >
+		Institution name
+		<input type="text" name="instituation" placeholder="School/College name"><br>
+		Degree
+		<input type="text" name="degree" placeholder="Add Degree"><br>
+		year of complitation
+		<input type="text" name="year" placeholder="School/College name"><br>
+	
+	</form>
+</body>
+</html>
