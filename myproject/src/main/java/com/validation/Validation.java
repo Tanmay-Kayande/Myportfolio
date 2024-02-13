@@ -79,4 +79,25 @@ public class Validation {
 		return result;
 		
 	}
+
+
+
+
+	public String validateUpdateProject(ArrayList<Object> all) {
+		
+		Part part = (Part)all.get(1);
+		long size = part.getSize();
+		String name = (String)all.get(3);
+		
+		if(!name.endsWith(".jpg")) {
+			result = "invalid";
+		}
+		else if(size>max_size) {
+			result = "invalid";
+		}
+		else {
+			result = "valid";
+		}
+		return result;
+	}
 }

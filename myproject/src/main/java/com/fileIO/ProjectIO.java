@@ -35,5 +35,31 @@ public class ProjectIO {
 			return result;
 		}
 	}
-
+	
+	@SuppressWarnings("finally")
+	public boolean update(String formatname, Part p) {
+		
+		path = "C:\\Users\\tanma\\jsp_projects\\myproject\\src\\main\\webapp\\images\\myprojects\\"+formatname;
+		try {
+			InputStream is = p.getInputStream();
+			byte[] b =new byte[is.available()];
+			is.read(b);
+			
+			FileOutputStream fos = new FileOutputStream(path);
+			fos.write(b);
+			
+			fos.close();
+			is.close();
+			
+			result = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println(result+"update");
+			return result;
+			
+		}
+	}
+		
 }

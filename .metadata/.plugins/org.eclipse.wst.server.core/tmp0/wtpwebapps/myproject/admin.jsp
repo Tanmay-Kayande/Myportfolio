@@ -1,4 +1,5 @@
 
+<%@page import="com.dao.ProjectDao"%>
 <%@page import="com.dao.MessageDao"%>
 <%
 String value = (String) session.getAttribute("login");
@@ -241,9 +242,9 @@ a {
 				<div class="card border-0 bg-light rounded shadow">
 					<div class="card-body p-4">
 					
-					
-						<span class="badge rounded-pill bg-primary float-md-end mb-3 mb-sm-0"><%=count %> Projects	</span>
-						<h5>Insert Projects</h5>
+						<%int project_count = new ProjectDao().count(); %>
+						<span class="badge rounded-pill bg-primary float-md-end mb-3 mb-sm-0"><%=project_count %> Projects	</span>
+						<h5>Add Projects</h5>
 						<div class="mt-3">
 							<span class="text-muted d-block"><i class="fa fa-home"
 								aria-hidden="true"></i> <a href="#" target="_blank"
@@ -251,11 +252,29 @@ a {
 								class="fa fa-map-marker" aria-hidden="true"></i> INDIA</span>
 						</div>
 						<div class="mt-3">
-							<a href="add-project.jsp" class="btn btn-primary">Add Project</a>
+							<a href="project.jsp" class="btn btn-primary">Add Project</a>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+				<div class="card border-0 bg-light rounded shadow">
+					<div class="card-body p-4">
+						<span class="badge rounded-pill bg-primary float-md-end mb-3 mb-sm-0"><%=project_count %> Projects	</span>
+						<h5>Update Projects</h5>
+						<div class="mt-3">
+							<span class="text-muted d-block"><i class="fa fa-home"
+								aria-hidden="true"></i> <a href="#" target="_blank"
+								class="text-muted">TANMAY</a></span> <span class="text-muted d-block"><i
+								class="fa fa-map-marker" aria-hidden="true"></i> INDIA</span>
+						</div>
+						<div class="mt-3">
+							<a href="update-project.jsp" class="btn btn-primary">Update Project</a>
+						</div>
+					</div>
+				</div>
+			</div>			
 
 
 			

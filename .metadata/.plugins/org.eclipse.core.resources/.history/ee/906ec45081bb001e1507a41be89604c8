@@ -1,0 +1,164 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
+import javax.servlet.http.Part;
+
+import com.fileIO.ProjectIO;
+import com.pojo.Projectpojo;
+
+public class ProjectDao implements InsertDao, ReadDao, DeleteDao  {
+
+	private Connection connection;
+	private String sql;
+	private PreparedStatement prepareStatement;
+	private int row;
+	private String result;
+	private ResultSet rs;
+
+	@SuppressWarnings("finally")
+	@Override
+	public String Insert(ArrayList<Object> al) {
+
+		try {
+
+			String filename = (String) al.get(0);
+			String formatname = format(filename);
+			
+			connection = ConnectionFactory.getConnection();
+			connection.setAutoCommit(false);
+			sql = "insert into project(filename) value (?)";
+			prepareStatement = connection.prepareStatement(sql);
+			prepareStatement.setString(1, formatname);
+			row = prepareStatement.executeUpdate();
+			if(row == 1) {
+				boolean write = new ProjectIO().write(formatname,(Part) al.get(1));
+				if(write==true) {
+					
+					connection.commit();
+					result = "inserted";
+				}
+				else {
+					connection.rollback();
+					result = "failed";
+				}
+			}
+
+		} catch (Exception e) {
+			result = "failed";
+			e.printStackTrace();
+		} finally {
+
+			return result;
+		}
+	}
+
+	private String format(String filename) {
+
+		String formatfilename = LocalDateTime.now().toString() + filename;
+		String[] split = formatfilename.split(":");
+		return split[0] + split[1] + split[2];
+
+	}
+
+	@SuppressWarnings("finally")
+	@Override
+	public ArrayList<Object> read() {
+		
+		ArrayList<Object> al = new ArrayList<>();
+		try {
+			
+			connection = ConnectionFactory.getConnection();
+			sql = "select * from project";
+			prepareStatement = connection.prepareStatement(sql);
+			rs = prepareStatement.executeQuery();
+			while(rs.next()) {
+				
+				Projectpojo p = new Projectpojo(rs.getInt("sn"),rs.getString("filename"));
+				al.add(p);
+			}
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		finally {
+			
+			return al;
+		}
+		
+	}
+	
+	@SuppressWarnings("finally")
+	public int count() {
+		
+		int no_of_projects = 0;
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select count(*) as count from project";
+			prepareStatement = connection.prepareStatement(sql);
+			rs = prepareStatement.executeQuery();
+			rs.next();
+			no_of_projects = rs.getInt("count");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			
+			return no_of_projects;
+		}
+
+}
+
+	@SuppressWarnings("finally")
+	@Override
+	public String delete(int sn) {
+		
+		try {
+			
+			connection = ConnectionFactory.getConnection();
+			sql = "delete from project where sn = ?";
+			prepareStatement = connection.prepareStatement(sql);
+			prepareStatement.setInt(1, sn);
+			row = prepareStatement.executeUpdate();
+			if(row==1) {
+				result = "deleted";
+			}
+			
+		} catch (Exception e) {
+			result = "failed";
+			e.printStackTrace();
+		}
+		finally {
+			
+			return result;
+		}
+	}
+
+	@SuppressWarnings("finally")
+	public String getFilePath(int sn) {
+		String path = null;
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select filename from project where sn = ?";
+			prepareStatement = connection.prepareStatement(sql);
+			prepareStatement.setInt(1, sn);
+			rs = prepareStatement.executeQuery();
+			if(rs.next()) {
+				path = rs.getString("filename");
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			return path;
+		}
+		
+	}
+}

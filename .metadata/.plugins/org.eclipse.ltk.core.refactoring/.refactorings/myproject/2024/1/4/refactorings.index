@@ -21,3 +21,35 @@
 1706023252783	Extract local variable 'name'
 1706023266176	Extract local variable 'part'
 1706024552277	Extract local variable 'size'
+1706073805477	Extract local variable 'al'
+1706074453473	Rename resource 'add-project.jsp'
+1706074851422	Extract local variable 'p'
+1706077630877	Delete element
+1706077633743	Delete element
+1706077636429	Delete element
+1706077638937	Delete element
+1706077641054	Delete element
+1706077643257	Delete element
+1706077645699	Delete element
+1706077647996	Delete element
+1706168919590	Extract local variable 'check'
+1706170430356	Extract local variable 'sn'
+1706170660747	Extract local variable 'delete'
+1706172836384	Extract local variable 'pd'
+1706173856489	Extract local variable 'executeQuery'
+1706174243181	Extract local variable 'filePath'
+1706174342610	Extract local variable 'file'
+1706174396874	Extract local variable 'd'
+1706176356947	Extract local variable 'result'
+1706176431576	Delete element
+1706176454431	Delete element
+1706176467443	Delete element
+1706177609854	Delete element
+1706180941608	Delete element
+1706181293997	Delete element
+1706181932236	Delete element
+1706182717392	Delete element
+1706182981754	Delete element
+1706252858760	Extract local variable 'oldname'
+1706253096488	Extract local variable 'al1'
+1706253433392	Extract local variable 'val'

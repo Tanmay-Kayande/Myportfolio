@@ -27,6 +27,7 @@ public class Project extends HttpServlet {
 		String check = request.getParameter("check");
 		HttpSession session = request.getSession();
 		ProjectDao pd = new ProjectDao();
+		Validation val = new Validation();
 		if(check == null) {
 		
 		Part part = request.getPart("myfile");
@@ -35,8 +36,7 @@ public class Project extends HttpServlet {
 		ArrayList<Object> al = new ArrayList<>();
 		al.add(filename);
 		al.add(part);
-		
-		String result = new Validation().validateproject(al);
+		String result = val.validateproject(al);
 		
 		if(result.equals("valid")) {
 			
@@ -59,7 +59,51 @@ public class Project extends HttpServlet {
 		}
 		}
 		else if(check.equals("update")) {
+			String oldname = request.getParameter("filename");
+			String parameter = request.getParameter("sn");
+		    int sn = Integer.parseInt(parameter);
+		    Part part = request.getPart("myfile");
+			String newname = part.getSubmittedFileName();
 			
+			ArrayList<Object> all = new ArrayList<>();
+			all.add(oldname);
+			all.add(part);
+			all.add(sn);
+			all.add(newname);
+			String name = (String)all.get(0);
+			System.out.println(name);
+			String validate = val.validateUpdateProject(all);
+			if(validate.equals("valid")) {
+			String result = pd.update(all);
+			if(result.equals("updated")) {
+				String path = "C:/Users/tanma/jsp_projects/myproject/src/main/webapp/images/myprojects/" + oldname;
+				File file = new File(path);
+		        if (file.exists()) {
+		            boolean deleted = file.delete();
+		            if (deleted) {
+		                session.setAttribute("msg", "Project updated successfully");
+		                response.sendRedirect("update-project.jsp");
+		            } else {
+		                session.setAttribute("msg", "Failed to update the file");
+		                response.sendRedirect("update-project.jsp");
+		            }
+		        }
+		        else {
+		        	session.setAttribute("msg", "File not found");
+		            response.sendRedirect("update-project.jsp");
+		        }
+			
+			}
+			else {
+				 session.setAttribute("msg", "Something went wrong");
+			        response.sendRedirect("update-project.jsp");
+			}
+			}
+			else {
+				
+				session.setAttribute("msg", "Size should be less than 100MB and in JPG format only");
+				response.sendRedirect("update-project.jsp");
+			}
 		}
 		else if (check.equals("delete")) {
 		    String filename = request.getParameter("filename");
