@@ -34,6 +34,7 @@ public class Education extends HttpServlet {
 		al.add(year);
 		al.add(desc);
 		result = new Validation().validateEdu(al);
+		
 		if(result.equals("valid")) {
 			
 			EducationDao eduDao = new EducationDao();

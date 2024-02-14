@@ -15,3 +15,5 @@
 1707822797518	Extract local variable 'eduDao'
 1707823060635	Extract local variable 'al'
 1707824753198	Extract local variable 'insert'
+1707929678276	Encapsulate field 'sn'
+1707929720103	Extract local variable 'al'

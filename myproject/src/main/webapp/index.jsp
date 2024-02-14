@@ -2,6 +2,8 @@
 <%@page import="com.pojo.Projectpojo"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.dao.ProjectDao"%>
+<%@page import="com.dao.EducationDao"%>
+<%@page import="com.pojo.EducationPojo"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -183,7 +185,7 @@
 					<h2 class="mb-4">Certificates</h2>
 
 					<div class="timeline">
-					<!-- loop from here -->
+						<!-- loop from here -->
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
 								<span>2019</span>
@@ -197,7 +199,7 @@
 									faucibus nunc.</p>
 							</div>
 						</div>
-						
+
 
 						<!-- <div class="timeline-wrapper">
 							<div class="timeline-yr">
@@ -247,21 +249,27 @@
 					<h2 class="mb-4 mobile-mt-2">Educations</h2>
 
 					<div class="timeline">
-					<!-- loop from here -->
-					
+						<!-- loop from here -->
+						<%
+							ArrayList<Object> aledu= new EducationDao().read();
+							for(int in = aledu.size()-1; in>=0; in--){
+							EducationPojo e = (EducationPojo)aledu.get(in);
+		
+						%>
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
-								<span>2017</span>
+								<span><%=e.getYear() %></span>
 							</div>
 							<div class="timeline-info">
 								<h3>
-									<span>Mobile Web</span><small>Master Design</small>
+									<span><%=e.getInstitution() %></span><small><%=e.getDegree() %></small>
 								</h3>
-								<p>Please tell your friends about Tooplate website. That
-									would be very helpful. We need your support.</p>
+								<p><%=e.getDesc() %></p>
 							</div>
 						</div>
-						
+						<%
+							}
+						%>
 
 						<!-- <div class="timeline-wrapper">
 							<div class="timeline-yr">

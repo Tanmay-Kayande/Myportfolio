@@ -5,7 +5,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-public class EducationDao implements InsertDao{
+import com.pojo.EducationPojo;
+
+public class EducationDao implements InsertDao, ReadDao{
 
 	private Connection connection;
 	private String sql;
@@ -42,6 +44,54 @@ public class EducationDao implements InsertDao{
 		
 		
 	}
+
+	@SuppressWarnings("finally")
+	@Override
+	public ArrayList<Object> read() {
+		
+		ArrayList<Object> al = new ArrayList<>();
+		
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select * from education";
+			prepareStatement = connection.prepareStatement(sql);
+			rs =prepareStatement.executeQuery();
+			while(rs.next()) {
+				EducationPojo e =	new EducationPojo(rs.getInt("sn"), rs.getString("institution"), rs.getString("degree"),
+						rs.getString("year"), rs.getString("desc"));
+				al.add(e);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			return al;
+		}
+		
+	}
+	
+@SuppressWarnings("finally")
+public int countEdu() {
+		
+		int edu = 0;
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select count(*) as count from education";
+			prepareStatement = connection.prepareStatement(sql);
+			rs = prepareStatement.executeQuery();
+			rs.next();
+			edu = rs.getInt("count");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			
+			return edu;
+		}
+	
+}
 
 	
 }

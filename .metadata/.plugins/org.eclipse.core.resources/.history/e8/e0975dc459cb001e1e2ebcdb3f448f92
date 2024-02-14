@@ -1,0 +1,31 @@
+package com.pojo;
+
+public class EducationPojo {
+
+	private String institution;
+	private String degree;
+	private String year;
+	private String desc;
+	
+	public EducationPojo(String institution, String degree, String year, String desc) {
+		super();
+		this.institution = institution;
+		this.degree = degree;
+		this.year = year;
+		this.desc = desc;
+	}
+	public String getInstitution() {
+		return institution;
+	}
+	public String getDegree() {
+		return degree;
+	}
+	public String getYear() {
+		return year;
+	}
+	public String getDesc() {
+		return desc;
+	}
+	
+	
+}

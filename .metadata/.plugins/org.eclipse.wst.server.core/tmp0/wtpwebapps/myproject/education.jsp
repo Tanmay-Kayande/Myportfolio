@@ -1,5 +1,6 @@
-<%@page import="com.dao.ProjectDao"%>
-<%@page import="com.dao.MessageDao"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.dao.EducationDao"%>
+<%@page import="com.pojo.EducationPojo"%>
 <%
 String value = (String) session.getAttribute("login");
 if (value == null) {
@@ -28,5 +29,22 @@ if (value == null) {
 		<input type="text" name="desc" placeholder="Add Description"><br>
 		<button>Submit</button>
 	</form>
+	
+	<%
+		ArrayList<Object> al = new EducationDao().read();
+		int i = 1;
+		for(int in = al.size()-1; in>=0; in--){
+			EducationPojo e = (EducationPojo)al.get(in);
+		
+	%>
+	
+		<%= i++ +"."%><%=e.getInstitution() %><br>
+		<%=e.getDegree() %><br>
+		<%=e.getYear() %><br>
+		<%=e.getDesc() %><br>
+	
+	<%
+		}
+	%>
 </body>
 </html>
