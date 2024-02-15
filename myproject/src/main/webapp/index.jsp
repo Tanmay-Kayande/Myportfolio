@@ -7,6 +7,8 @@
 <%@page import="com.dao.EducationDao"%>
 <%@page import="com.pojo.EducationPojo"%>
 <%@page import="java.util.Collections"%>
+<%@page import="com.pojo.CertificatesPojo"%>
+<%@page import="com.dao.CertificatesDao"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -189,19 +191,38 @@
 
 					<div class="timeline">
 						<!-- loop from here -->
+
+						<%
+						ArrayList<Object> alCertificates = new CertificatesDao().read();
+
+						// Sort the certificate entries based on the year in descending order
+						Collections.sort(alCertificates, new Comparator<Object>() {
+							public int compare(Object o1, Object o2) {
+								CertificatesPojo c1 = (CertificatesPojo) o1;
+								CertificatesPojo c2 = (CertificatesPojo) o2;
+								// Assuming year is stored as a String, convert it to Integer for comparison
+								return Integer.parseInt(c2.getYear()) - Integer.parseInt(c1.getYear());
+							}
+						});
+
+						for (int in = 0; in < alCertificates.size(); in++) {
+							CertificatesPojo c = (CertificatesPojo) alCertificates.get(in);
+						%>
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
-								<span>2019</span>
+								<span><%=c.getYear()%></span>
 							</div>
 							<div class="timeline-info">
 								<h3>
-									<span>Project Manager</span><small>Best Studio</small>
+									<span><%=c.getCertificate()%></span><small><%=c.getInstitution()%></small>
 								</h3>
-								<p>Proin ornare non purus ut rutrum. Nulla facilisi. Aliquam
-									laoreet libero ac pharetra feugiat. Cras ac fermentum nunc, a
-									faucibus nunc.</p>
+								<p><%=c.getDesc()%></p>
 							</div>
 						</div>
+						<%
+						}
+						%>
+
 
 
 						<!-- <div class="timeline-wrapper">

@@ -53,6 +53,15 @@ public class Certificates extends HttpServlet {
 	            session.setAttribute("msg", "Enter in valid format");
 	        }
 	    }
+	    else if(check.equals("delete")) {
+	    	
+	    	
+	    }
+	    
+	    else if(check.equals("update")) {
+	    	
+	    	
+	    }
 	}
 
 	}

@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
+import com.pojo.CertificatesPojo;
+
 public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao{
 
 	private Connection connection;
@@ -26,10 +28,29 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 		return null;
 	}
 
+	@SuppressWarnings("finally")
 	@Override
 	public ArrayList<Object> read() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		ArrayList<Object> al = new ArrayList<>();
+		
+		try {
+			connection = ConnectionFactory.getConnection();
+			sql = "select * from certificates";
+			prepareStatement = connection.prepareStatement(sql);
+			rs =prepareStatement.executeQuery();
+			while(rs.next()) {
+				CertificatesPojo e =	new CertificatesPojo(rs.getInt("sn"), rs.getString("certificate"), rs.getString("institution"),
+						rs.getString("year"), rs.getString("desc"));
+				al.add(e);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			return al;
+		}
 	}
 
 	@SuppressWarnings("finally")
