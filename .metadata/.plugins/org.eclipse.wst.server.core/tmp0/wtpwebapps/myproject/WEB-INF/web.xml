@@ -28,6 +28,12 @@
   	<description></description>
   	<servlet-class>com.controller.Education</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Certificates</servlet-name>
+  	<display-name>Certificates</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Certificates</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Auth</servlet-name>
   	<url-pattern>/Auth</url-pattern>
@@ -43,5 +49,9 @@
   <servlet-mapping>
   	<servlet-name>Education</servlet-name>
   	<url-pattern>/Education</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Certificates</servlet-name>
+  	<url-pattern>/Certificates</url-pattern>
   </servlet-mapping>
 </web-app>

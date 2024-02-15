@@ -1,0 +1,31 @@
+package com.dao;
+
+import java.util.ArrayList;
+
+public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao{
+
+	@Override
+	public String update(ArrayList<Object> al) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String delete(int sn) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Object> read() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String Insert(ArrayList<Object> al) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

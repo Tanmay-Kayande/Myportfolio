@@ -1,0 +1,5 @@
+package com.dao;
+
+public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao{
+
+}
