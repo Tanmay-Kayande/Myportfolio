@@ -351,10 +351,10 @@
 
 				<div class="col-lg-5 mr-lg-5 col-12">
 					<div class="google-map w-100">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188"
-							width="400" height="300" frameborder="0" style="border: 0"
-							allowfullscreen></iframe>
+							
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.900275948!2d78.99010793294912!3d21.161225997003935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708002166360!5m2!1sen!2sin" 
+							width="400" height="300" frameborder="0" style="border:0;" 
+							allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 
 					<div
@@ -363,7 +363,7 @@
 							<h3 class="mb-3 text-white">Say hello</h3>
 							<p class="footer-text mb-0">010 020 0960</p>
 							<p>
-								<a href="mailto:hello@company.co">hello@company.co</a>
+								<a href="mailto:tanmaykayande85@gmail.com">tanmaykayande85@gmail.com</a>
 							</p>
 						</div>
 
