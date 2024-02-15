@@ -87,7 +87,7 @@ public class Certificates extends HttpServlet {
 		    if (validate.equals("valid")) {
 		        result = certificatesDao.update(all);
 		        if (result.equals("updated")) {
-		            session.setAttribute("msg", "Certificate updated successfully");
+		            session.setAttribute("msg", "Education updated successfully");
 		            response.sendRedirect("certificates.jsp");
 		        } else {
 		            session.setAttribute("msg", "Something went wrong");

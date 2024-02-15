@@ -16,7 +16,6 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 	private String result;
 	private ResultSet rs;
 	
-	@SuppressWarnings("finally")
 	@Override
 	public String update(ArrayList<Object> al) {
 		

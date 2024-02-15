@@ -296,3 +296,16 @@
 0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:13:01 +0530] "POST /myproject/Certificates HTTP/1.1" 200 -
 0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:13:04 +0530] "POST /myproject/Certificates HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:13:04 +0530] "GET /myproject/certificates.jsp HTTP/1.1" 200 2265
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:04 +0530] "GET /myproject/certificates.jsp HTTP/1.1" 200 2179
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:24 +0530] "POST /myproject/Certificates HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:24 +0530] "GET /myproject/certificates.jsp HTTP/1.1" 200 3056
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:30 +0530] "POST /myproject/Certificates HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:30 +0530] "GET /myproject/certificates.jsp HTTP/1.1" 200 3054
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:35 +0530] "GET /myproject/index.jsp HTTP/1.1" 200 14587
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:35 +0530] "GET /myproject/css/bootstrap.min.css HTTP/1.1" 200 155758
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:35 +0530] "GET /myproject/css/owl.carousel.min.css HTTP/1.1" 200 3351
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:35 +0530] "GET /myproject/css/owl.theme.default.min.css HTTP/1.1" 200 1013
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:35 +0530] "GET /myproject/css/unicons.css HTTP/1.1" 200 59971
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:46 +0530] "POST /myproject/Certificates HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:46 +0530] "GET /myproject/certificates.jsp HTTP/1.1" 200 3050
+0:0:0:0:0:0:0:1 - - [15/Feb/2024:18:26:49 +0530] "GET /myproject/index.jsp HTTP/1.1" 200 14583

@@ -16,36 +16,10 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 	private String result;
 	private ResultSet rs;
 	
-	@SuppressWarnings("finally")
 	@Override
 	public String update(ArrayList<Object> al) {
-		
-		 	int sn = (int) al.get(0);
-		    String certificate = (String) al.get(1);
-		    String institution = (String) al.get(2);
-		    String year =  (String) al.get(3);  // Retrieve year as int
-		    String desc = (String) al.get(4);
-		
-		    try {
-		        connection = ConnectionFactory.getConnection();
-		        sql = "update certificates set certificate =?, institution =?, year =?, `desc` =? where sn =?";
-		        prepareStatement = connection.prepareStatement(sql);
-		        prepareStatement.setString(1, certificate);
-		        prepareStatement.setString(2, institution);
-		        prepareStatement.setInt(3, Integer.parseInt(year));  // Set year as int
-		        prepareStatement.setString(4, desc);
-		        prepareStatement.setInt(5, sn);
-		        row = prepareStatement.executeUpdate();
-		        if(row == 1) {
-		            result = "updated";
-		        }
-		    } catch (Exception e) {
-		        result = "failed";
-		        e.printStackTrace();
-		    } finally {
-		        return result;
-		    }
-		    
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@SuppressWarnings("finally")

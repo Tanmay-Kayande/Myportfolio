@@ -120,27 +120,5 @@ public class Validation {
 
 	return result;
 }
-	
-	public String validateUpdateCer(ArrayList<Object> al) {
-		String certificate = (String) al.get(1);
-		String institution = (String) al.get(2);
-		String desc = (String) al.get(4);
-
-		if(certificate.length()>200||certificate.length()<=0)
-		{
-			result = "invalid";
-		}else if(institution.length()>100||institution.length()<=0)
-		{
-			result = "invalid";
-		}else if(desc.length()>1000||desc.length()<10)
-		{
-			result = "invalid";
-		}else
-		{
-			result = "valid";
-		}
-
-		return result;
-	}
 
 }

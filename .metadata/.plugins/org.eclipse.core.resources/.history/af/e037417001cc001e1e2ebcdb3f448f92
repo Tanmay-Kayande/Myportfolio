@@ -16,7 +16,6 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 	private String result;
 	private ResultSet rs;
 	
-	@SuppressWarnings("finally")
 	@Override
 	public String update(ArrayList<Object> al) {
 		
@@ -30,8 +29,8 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 		        connection = ConnectionFactory.getConnection();
 		        sql = "update certificates set certificate =?, institution =?, year =?, `desc` =? where sn =?";
 		        prepareStatement = connection.prepareStatement(sql);
-		        prepareStatement.setString(1, certificate);
-		        prepareStatement.setString(2, institution);
+		        prepareStatement.setString(1, institution);
+		        prepareStatement.setString(2, degree);
 		        prepareStatement.setInt(3, Integer.parseInt(year));  // Set year as int
 		        prepareStatement.setString(4, desc);
 		        prepareStatement.setInt(5, sn);

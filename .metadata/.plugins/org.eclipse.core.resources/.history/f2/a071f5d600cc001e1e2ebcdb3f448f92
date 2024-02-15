@@ -84,19 +84,6 @@ public class Certificates extends HttpServlet {
 		    all.add(desc);
 	    	
 		    String validate = new Validation().validateUpdateCer(all);
-		    if (validate.equals("valid")) {
-		        result = certificatesDao.update(all);
-		        if (result.equals("updated")) {
-		            session.setAttribute("msg", "Certificate updated successfully");
-		            response.sendRedirect("certificates.jsp");
-		        } else {
-		            session.setAttribute("msg", "Something went wrong");
-		            response.sendRedirect("certificates.jsp");
-		        }
-		    } else {
-		        session.setAttribute("msg", "Enter in valid format");
-		        response.sendRedirect("certificates.jsp");
-		    }
 	    }
 	}
 

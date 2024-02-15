@@ -122,9 +122,9 @@ public class Validation {
 }
 	
 	public String validateUpdateCer(ArrayList<Object> al) {
-		String certificate = (String) al.get(1);
-		String institution = (String) al.get(2);
-		String desc = (String) al.get(4);
+		String certificate = (String) al.get(0);
+		String institution = (String) al.get(1);
+		String desc = (String) al.get(3);
 
 		if(certificate.length()>200||certificate.length()<=0)
 		{
