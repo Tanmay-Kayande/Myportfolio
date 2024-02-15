@@ -21,6 +21,7 @@ public class Education extends HttpServlet {
 		
 		String check = request.getParameter("check");
 		HttpSession session = request.getSession();
+		EducationDao eduDao = new EducationDao();
 		if(check==null) {
 		
 		String institution = request.getParameter("institution");
@@ -37,7 +38,7 @@ public class Education extends HttpServlet {
 		
 		if(result.equals("valid")) {
 			
-			EducationDao eduDao = new EducationDao();
+			eduDao = new EducationDao();
 			result = eduDao.Insert(al);
 			if(result.equals("saved")) {
 				response.sendRedirect("education.jsp");
@@ -49,7 +50,7 @@ public class Education extends HttpServlet {
 		}
 		else {
 			response.sendRedirect("education.jsp");
-			session.setAttribute("msg", result);
+			session.setAttribute("msg", "Enter in valid format");
 		}
 		}
 		else if(check.equals("delete")) {
@@ -63,9 +64,39 @@ public class Education extends HttpServlet {
 				session.setAttribute("msg", "Something went worng");
 			}
 		}
-		else if(check.equals("update")) {
-			
+		else if (check.equals("update")) {
+		    String parameter = request.getParameter("sn");
+		    int sn = Integer.parseInt(parameter);
+		    String institution = request.getParameter("institution");
+		    String degree = request.getParameter("degree");
+		    String year = request.getParameter("year");
+		    String desc = request.getParameter("desc");
+
+
+		    ArrayList<Object> all = new ArrayList<>();
+		    all.add(sn);
+		    all.add(institution);
+		    all.add(degree);
+		    all.add(year);
+		    all.add(desc);
+
+		    String validate = new Validation().validateEdu(all);
+		    if (validate.equals("valid")) {
+		        result = eduDao.update(all);
+		        if (result.equals("updated")) {
+		            session.setAttribute("msg", "Education updated successfully");
+		            response.sendRedirect("education.jsp");
+		        } else {
+		            session.setAttribute("msg", "Something went wrong");
+		            response.sendRedirect("education.jsp");
+		        }
+		    } else {
+		        session.setAttribute("msg", "Enter in valid format");
+		        response.sendRedirect("education.jsp");
+		    }
 		}
+
+
 		
 	}
 

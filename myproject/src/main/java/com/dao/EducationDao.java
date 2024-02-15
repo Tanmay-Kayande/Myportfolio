@@ -116,11 +116,35 @@ public String delete(int sn) {
 	
 }
 
+@SuppressWarnings("finally")
 @Override
 public String update(ArrayList<Object> al) {
-	
-	return null;
+    int sn = (int) al.get(0);
+    String institution = (String) al.get(1);
+    String degree = (String) al.get(2);
+    String year =  (String) al.get(3);  // Retrieve year as int
+    String desc = (String) al.get(4);
+    try {
+        connection = ConnectionFactory.getConnection();
+        sql = "update education set institution =?, degree =?, year =?, `desc` =? where sn =?";
+        prepareStatement = connection.prepareStatement(sql);
+        prepareStatement.setString(1, institution);
+        prepareStatement.setString(2, degree);
+        prepareStatement.setInt(3, Integer.parseInt(year));  // Set year as int
+        prepareStatement.setString(4, desc);
+        prepareStatement.setInt(5, sn);
+        row = prepareStatement.executeUpdate();
+        if(row == 1) {
+            result = "updated";
+        }
+    } catch (Exception e) {
+        result = "failed";
+        e.printStackTrace();
+    } finally {
+        return result;
+    }
 }
+
 
 	
 }

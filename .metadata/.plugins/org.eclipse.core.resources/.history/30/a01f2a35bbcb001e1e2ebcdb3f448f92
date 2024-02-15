@@ -1,0 +1,28 @@
+<form action="Education" method="post">
+    <%-- Hidden fields for identifying the record --%>
+    <input type="hidden" name="check" value="update">
+    <input type="hidden" name="sn" value="<%=e.getSn()%>">
+    
+    <%-- Display input fields for editing when update button is clicked --%>
+    <%-- Otherwise, display the education details --%>
+    <%
+    if (request.getParameter("check") != null && request.getParameter("check").equals("update") && request.getParameter("sn") != null && request.getParameter("sn").equals(String.valueOf(e.getSn()))) {
+    %>
+        Institution name
+        <input type="text" name="edit_institution" value="<%=e.getInstitution() %>"><br>
+        Degree
+        <input type="text" name="edit_degree" value="<%=e.getDegree() %>"><br>
+        Year of completion
+        <input type="text" name="edit_year" value="<%=e.getYear() %>"><br>
+        Description 
+        <input type="text" name="edit_desc" value="<%=e.getDesc() %>"><br>
+        <button type="submit">Save</button>
+    <% } else { %>
+        <%= i++ +"."%><%=e.getInstitution() %><br>
+        <%=e.getDegree() %><br>
+        <%=e.getYear() %><br>
+        <%=e.getDesc() %><br>
+        <button type="submit" name="action" value="update">Update</button>
+        <button type="submit" name="action" value="delete">Delete</button>
+    <% } %>
+</form>

@@ -101,28 +101,24 @@ public class Validation {
 		return result;
 	}
 
-
-
-
 	public String validateEdu(ArrayList<Object> al) {
-	
-		String institution = (String)al.get(0);
-		String degree = (String)al.get(1);
-		int year =  Integer.parseInt((String) al.get(2));
-		String desc = (String) al.get(3);
-		
-		if (institution.length() > 200 || institution.length() <= 0) {
-		    result = "invalid";
-		} else if (degree.length() > 100 || degree.length() <= 0) {
-		    result = "invalid";
-		} else if (year < 1950 || year > 2050) {
-		    result = "invalid";
-		} else if (desc.length() > 1000 || desc.length() < 10) {
-		    result = "invalid";
-		} else {
-		    result = "valid";
-		}
-		
-		return result;
+		String institution = (String) al.get(1);
+        String degree = (String) al.get(2);
+        String desc = (String) al.get(4);
+
+        if (institution.length() > 200 || institution.length() <= 0) {
+            result = "invalid";
+        } else if (degree.length() > 100 || degree.length() <= 0) {
+            result = "invalid";
+        } else if (desc.length() > 1000 || desc.length() < 10) {
+            result = "invalid";
+        } else {
+            result = "valid";
+        }
+
+        return result;
 	}
+
+
+
 }
