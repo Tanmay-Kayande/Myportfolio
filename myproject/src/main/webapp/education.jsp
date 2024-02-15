@@ -42,7 +42,17 @@ if (value == null) {
 		<%=e.getDegree() %><br>
 		<%=e.getYear() %><br>
 		<%=e.getDesc() %><br>
-	
+		<form action="Education" method="post">
+		<input type="hidden" name="check" value="delete">
+		<input type="hidden" name="sn" value="<%=e.getSn()%>">
+		<button>Delete</button>
+		</form>
+		
+		<form action="Education" method="post">
+		<input type="hidden" name="check" value="update">
+		<input type="hidden" name="sn" value="<%=e.getSn()%>">
+		<button>Update</button>
+		</form>
 	<%
 		}
 	%>

@@ -17,3 +17,4 @@
 1707824753198	Extract local variable 'insert'
 1707929678276	Encapsulate field 'sn'
 1707929720103	Extract local variable 'al'
+1707969156795	Extract local variable 'sn'

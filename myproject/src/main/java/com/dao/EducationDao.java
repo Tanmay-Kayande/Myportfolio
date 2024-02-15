@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import com.pojo.EducationPojo;
 
-public class EducationDao implements InsertDao, ReadDao{
+public class EducationDao implements InsertDao, ReadDao, DeleteDao, UpdateDao{
 
 	private Connection connection;
 	private String sql;
@@ -91,6 +91,35 @@ public int countEdu() {
 			return edu;
 		}
 	
+}
+
+@SuppressWarnings("finally")
+@Override
+public String delete(int sn) {
+	
+	try {
+		connection = ConnectionFactory.getConnection();
+		sql = "delete from education where sn =?";
+		prepareStatement = connection.prepareStatement(sql);
+		prepareStatement.setInt(1, sn);
+		row = prepareStatement.executeUpdate();
+		if(row == 1) {
+			result = "deleted";
+		}
+	} catch (Exception e) {
+		result = "failed";
+		e.printStackTrace();
+	}
+	finally {
+		return result;
+	}
+	
+}
+
+@Override
+public String update(ArrayList<Object> al) {
+	
+	return null;
 }
 
 	

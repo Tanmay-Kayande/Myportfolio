@@ -1,9 +1,12 @@
 <!doctype html>
+<%@page import="java.util.Comparator"%>
+<%@page import="com.mysql.cj.x.protobuf.MysqlxCrud.Collection"%>
 <%@page import="com.pojo.Projectpojo"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="com.dao.ProjectDao"%>
 <%@page import="com.dao.EducationDao"%>
 <%@page import="com.pojo.EducationPojo"%>
+<%@page import="java.util.Collections"%>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -251,25 +254,37 @@
 					<div class="timeline">
 						<!-- loop from here -->
 						<%
-							ArrayList<Object> aledu= new EducationDao().read();
-							for(int in = aledu.size()-1; in>=0; in--){
-							EducationPojo e = (EducationPojo)aledu.get(in);
-		
+						ArrayList<Object> aledu = new EducationDao().read();
+
+						// Sort the education entries based on the year in descending order
+						Collections.sort(aledu, new Comparator<Object>() {
+							public int compare(Object o1, Object o2) {
+								EducationPojo e1 = (EducationPojo) o1;
+								EducationPojo e2 = (EducationPojo) o2;
+								// Assuming year is stored as a String, convert it to Integer for comparison
+								return Integer.parseInt(e2.getYear()) - Integer.parseInt(e1.getYear());
+							}
+						});
+
+						for (int in = 0; in < aledu.size(); in++) {
+							EducationPojo e = (EducationPojo) aledu.get(in);
 						%>
 						<div class="timeline-wrapper">
 							<div class="timeline-yr">
-								<span><%=e.getYear() %></span>
+								<span><%=e.getYear()%></span>
 							</div>
 							<div class="timeline-info">
 								<h3>
-									<span><%=e.getInstitution() %></span><small><%=e.getDegree() %></small>
+									<span><%=e.getInstitution()%></span><small><%=e.getDegree()%></small>
 								</h3>
-								<p><%=e.getDesc() %></p>
+								<p><%=e.getDesc()%></p>
 							</div>
 						</div>
 						<%
-							}
+						}
 						%>
+
+
 
 						<!-- <div class="timeline-wrapper">
 							<div class="timeline-yr">

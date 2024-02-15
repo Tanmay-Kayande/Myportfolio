@@ -52,6 +52,20 @@ public class Education extends HttpServlet {
 			session.setAttribute("msg", result);
 		}
 		}
+		else if(check.equals("delete")) {
+			String sn = request.getParameter("sn");
+			result = new EducationDao().delete(Integer.parseInt(sn));
+			if(result.equals("deleted")) {
+				response.sendRedirect("education.jsp");
+				session.setAttribute("msg", "Education deleded successfully");
+			}else {
+				response.sendRedirect("education.jsp");
+				session.setAttribute("msg", "Something went worng");
+			}
+		}
+		else if(check.equals("update")) {
+			
+		}
 		
 	}
 
