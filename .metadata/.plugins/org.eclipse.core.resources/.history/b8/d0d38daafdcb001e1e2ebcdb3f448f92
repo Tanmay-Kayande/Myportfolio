@@ -22,26 +22,10 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 		return null;
 	}
 
-	@SuppressWarnings("finally")
 	@Override
 	public String delete(int sn) {
-		
-		try {
-			connection = ConnectionFactory.getConnection();
-			sql = "delete from certificates where sn =?";
-			prepareStatement = connection.prepareStatement(sql);
-			prepareStatement.setInt(1, sn);
-			row = prepareStatement.executeUpdate();
-			if(row == 1) {
-				result = "deleted";
-			}
-		} catch (Exception e) {
-			result = "failed";
-			e.printStackTrace();
-		}
-		finally {
-			return result;
-		}
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@SuppressWarnings("finally")
@@ -97,24 +81,23 @@ try {
 		}
 	}
 	
-@SuppressWarnings("finally")
 public int countCer() {
 		
-		int cer = 0;
+		int edu = 0;
 		try {
 			connection = ConnectionFactory.getConnection();
-			sql = "select count(*) as count from certificates";
+			sql = "select count(*) as count from education";
 			prepareStatement = connection.prepareStatement(sql);
 			rs = prepareStatement.executeQuery();
 			rs.next();
-			cer = rs.getInt("count");
+			edu = rs.getInt("count");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		finally {
 			
-			return cer;
+			return edu;
 		}
 	
 }

@@ -1,5 +1,4 @@
 
-<%@page import="com.dao.CertificatesDao"%>
 <%@page import="com.dao.EducationDao"%>
 <%@page import="com.pojo.EducationPojo"%>
 <%@page import="com.dao.ProjectDao"%>
@@ -324,11 +323,11 @@ border-box
 				<div class="card border-0 bg-light rounded shadow">
 					<div class="card-body p-4">
 						<%
-						int cer_count = new CertificatesDao().countCer();
+						int cer_count = new EducationDao().countEdu();
 						%>
 						<span
 							class="badge rounded-pill bg-primary float-md-end mb-3 mb-sm-0">
-							<%=cer_count %> Certificates </span>
+							Certificates </span>
 						<h5>Certificates</h5>
 						<div class="mt-3">
 							<span class="text-muted d-block"><i class="fa fa-home"

@@ -22,7 +22,6 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 		return null;
 	}
 
-	@SuppressWarnings("finally")
 	@Override
 	public String delete(int sn) {
 		

@@ -22,13 +22,12 @@ public class CertificatesDao implements InsertDao, ReadDao, DeleteDao, UpdateDao
 		return null;
 	}
 
-	@SuppressWarnings("finally")
 	@Override
 	public String delete(int sn) {
 		
 		try {
 			connection = ConnectionFactory.getConnection();
-			sql = "delete from certificates where sn =?";
+			sql = "delete from education where sn =?";
 			prepareStatement = connection.prepareStatement(sql);
 			prepareStatement.setInt(1, sn);
 			row = prepareStatement.executeUpdate();

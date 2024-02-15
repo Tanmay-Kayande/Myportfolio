@@ -57,20 +57,6 @@ public class Certificates extends HttpServlet {
 	    	
 	    	String sn = request.getParameter("sn");
 	    	result = new CertificatesDao().delete(Integer.parseInt(sn));
-	    	if(result.equals("deleted")) {
-				response.sendRedirect("certificates.jsp");
-				session.setAttribute("msg", "Certificate deleded successfully");
-			}else {
-				response.sendRedirect("certificates.jsp");
-				session.setAttribute("msg", "Something went worng");
-			}
-	    	
-	    }
-	    
-	    else if(check.equals("update")) {
-	    	
-	    	String parameter = request.getParameter("sn");
-	    	int sn = Integer.parseInt(parameter);
 	    	String certificate = request.getParameter("certificate");
 	    	String institution = request.getParameter("institution");
 	    	String year = request.getParameter("year");
@@ -82,6 +68,10 @@ public class Certificates extends HttpServlet {
 		    all.add(institution);
 		    all.add(year);
 		    all.add(desc);
+	    }
+	    
+	    else if(check.equals("update")) {
+	    	
 	    	
 	    }
 	}
