@@ -1,8 +1,0 @@
-package com.dao;
-
-import java.util.ArrayList;
-
-public interface InsertDao {
-
-	public void Insert(ArrayList<Object> al);
-}

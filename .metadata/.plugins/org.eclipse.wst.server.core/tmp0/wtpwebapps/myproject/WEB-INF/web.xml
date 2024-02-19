@@ -34,6 +34,18 @@
   	<description></description>
   	<servlet-class>com.controller.Certificates</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DownloadResume</servlet-name>
+  	<display-name>DownloadResume</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.DownloadResume</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadResumeServlet</servlet-name>
+  	<display-name>DownloadResumeServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.DownloadResumeServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Auth</servlet-name>
   	<url-pattern>/Auth</url-pattern>
@@ -53,5 +65,13 @@
   <servlet-mapping>
   	<servlet-name>Certificates</servlet-name>
   	<url-pattern>/Certificates</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadResume</servlet-name>
+  	<url-pattern>/DownloadResume</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadResumeServlet</servlet-name>
+  	<url-pattern>/DownloadResumeServlet</url-pattern>
   </servlet-mapping>
 </web-app>

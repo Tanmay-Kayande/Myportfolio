@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Auth</servlet-name>
+  	<display-name>Auth</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Auth</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Message</servlet-name>
+  	<display-name>Message</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Message</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Project</servlet-name>
+  	<display-name>Project</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Project</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Education</servlet-name>
+  	<display-name>Education</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Education</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Certificates</servlet-name>
+  	<display-name>Certificates</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.Certificates</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadResume</servlet-name>
+  	<display-name>DownloadResume</display-name>
+  	<description></description>
+  	<servlet-class>com.controller.DownloadResume</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Auth</servlet-name>
+  	<url-pattern>/Auth</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Message</servlet-name>
+  	<url-pattern>/Message</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Project</servlet-name>
+  	<url-pattern>/Project</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Education</servlet-name>
+  	<url-pattern>/Education</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Certificates</servlet-name>
+  	<url-pattern>/Certificates</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadResume</servlet-name>
+  	<url-pattern>/DownloadResume</url-pattern>
+  </servlet-mapping>
+</web-app>

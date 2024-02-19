@@ -23,6 +23,11 @@
 <link rel="stylesheet" href="css/unicons.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+	integrity="sha512-" crossorigin="anonymous"
+	referrerpolicy="no-referrer" />
+
 
 <!-- MAIN STYLE -->
 <link rel="stylesheet" href="css/tooplate-style.css">
@@ -37,7 +42,7 @@
 	<!-- MENU -->
 	<nav class="navbar navbar-expand-sm navbar-light">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>
+			<a class="navbar-brand" href="index.jsp"><i class='uil uil-user'></i>
 				Tanmay</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -97,11 +102,16 @@
 							development.</p>
 
 						<div class="custom-btn-group mt-4">
-							<a href="#" class="btn mr-lg-2 custom-btn"><i
-								class='uil uil-file-alt'></i> Download Resume</a> <a href="#contact"
+							<!-- Updated download link without the 'download' attribute -->
+							<a href="myproject/src/main/webapp/resume/resume.pdf"
+								class="btn mr-lg-2 custom-btn" target="_blank"> <i
+								class='uil uil-file-alt'></i> Download Resume
+							</a> <a href="#contact"
 								class="btn custom-btn custom-btn-bg custom-btn-link">Get a
 								free quote</a>
 						</div>
+
+
 					</div>
 				</div>
 
@@ -351,10 +361,12 @@
 
 				<div class="col-lg-5 mr-lg-5 col-12">
 					<div class="google-map w-100">
-							
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.900275948!2d78.99010793294912!3d21.161225997003935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708002166360!5m2!1sen!2sin" 
-							width="400" height="300" frameborder="0" style="border:0;" 
-							allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.900275948!2d78.99010793294912!3d21.161225997003935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708002166360!5m2!1sen!2sin"
+							width="400" height="300" frameborder="0" style="border: 0;"
+							allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 
 					<div
@@ -368,14 +380,18 @@
 						</div>
 
 						<ul class="social-links">
-							<li><a href="#" class="uil uil-dribbble"
-								data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
-							<li><a href="#" class="uil uil-instagram"
-								data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
-							<li><a href="#" class="uil uil-youtube"
-								data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
+							<li><a href="https://github.com/Tanmay-Kayande"
+								class="fab fa-github" data-toggle="tooltip"
+								data-placement="left" title="Github" target="_blank"></a></li>
+							<li><a href="https://linkedin.com/in/tanmay-kayande"
+								class="fab fa-linkedin" data-toggle="tooltip"
+								data-placement="left" title="LinkedIn" target="_blank"></a></li>
+							<li><a href="#" class="fab fa-youtube" data-toggle="tooltip"
+								data-placement="left" title="Youtube" target="_blank"></a></li>
 						</ul>
 					</div>
+
+
 				</div>
 
 				<div class="col-lg-6 col-12">
@@ -415,18 +431,7 @@
 	<!-- FOOTER -->
 	<footer class="footer py-5">
 		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-12 col-12">
-					<p class="copyright-text text-center">Copyright &copy; 2019
-						Company Name . All rights reserved</p>
-					<p class="copyright-text text-center">
-						Designed by <a rel="nofollow"
-							href="https://www.facebook.com/tooplate">Tooplate</a>
-					</p>
-				</div>
-
-			</div>
+			<div class="row"></div>
 		</div>
 	</footer>
 

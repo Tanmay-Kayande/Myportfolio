@@ -1,0 +1,40 @@
+package com.controller;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/DownloadResumeServlet")
+public class DownloadResume extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+    
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Specify the path to your resume PDF file
+        String filePath = "/path/to/your/resume.pdf"; // Update this with the actual path
+        
+        File downloadFile = new File(filePath);
+        FileInputStream inputStream = new FileInputStream(downloadFile);
+        
+        // Set the content type and attachment header
+        response.setContentType("application/pdf");
+        response.setHeader("Content-Disposition", "attachment; filename=\"" + downloadFile.getName() + "\"");
+        
+        // Copy the file content to the response output stream
+        OutputStream outStream = response.getOutputStream();
+        byte[] buffer = new byte[4096];
+        int bytesRead;
+        while ((bytesRead = inputStream.read(buffer)) != -1) {
+            outStream.write(buffer, 0, bytesRead);
+        }
+        
+        inputStream.close();
+        outStream.flush();
+        outStream.close();
+    }
+}
